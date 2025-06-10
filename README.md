@@ -16,7 +16,7 @@ Este é um conversor de moedas em **Java**, que utiliza uma API externa para obt
 
 ## 🛠️ Tecnologias Utilizadas
 
-- Java 17+
+- Java 22+
 - Requisições HTTP com `java.net.http`
 - Manipulação de JSON com a biblioteca Gson `com.google.gson`
 - Leitura e gravação de arquivos `FileWriter`
@@ -51,7 +51,7 @@ Para que o conversor funcione corretamente, é necessário fornecer uma **chave 
 
 Você pode se registrar gratuitamente no **ExchangeRate API**, um serviço confiável e fácil de usar para obter taxas de câmbio de moedas em tempo real. O ExchangeRate API oferece planos gratuitos que atendem a necessidades básicas, permitindo acessar cotações atualizadas e realizar conversões simples, além de planos pagos com recursos adicionais para usos mais avançados.
 
-Para se cadastrar, acesse: [exchangerate-api.com](https://www.exchangerate-api.com/)
+
 
 
 ---
@@ -85,38 +85,4 @@ java ConversorMoeda
 
 Todas as conversões realizadas são salvas automaticamente em um arquivo chamado `conversionHistory.json`. Isso permite que o usuário acompanhe os valores convertidos ao longo do tempo.
 
----
 
-## 📂 Estrutura do Projeto
-
-```text
-conversor-de-moedas/
-├── src/
-│   ├── client/
-│   │   ├── ApiKeyProvider.java           # Fornece a chave da API
-│   │   └── ExchangeRateClient.java       # Cliente para consumir taxas de câmbio
-│   ├── model/
-│   │   ├── ConversionRateResponse.java   # Representa a resposta da API de câmbio
-│   │   └── Menu.java                     # Interface de menu do app
-│   ├── service/
-│   │    └── ConversionHistorySaver.java  # Salva o histórico de conversões
-│   └── Main.java                         # Classe principal para execução
-├── config.properties                     # Configurações (chave da API)
-└── conversionHistory.json                # Arquivo com histórico de conversões
-```
-
----
-
-## 🤝 Contribuindo
-
-Contribuições são bem-vindas!
-
-1. Faça um fork
-2. Crie uma branch (`git checkout -b feature/nova-funcionalidade`)
-3. Commit suas alterações (`git commit -m 'Adiciona nova funcionalidade'`)
-4. Push na branch (`git push origin feature/nova-funcionalidade`)
-5. Abra um Pull Request
-
----
-
-Desenvolvido com 💻 por [Lucas Yago](https://github.com/lucas-yago).
